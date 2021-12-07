@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <span class="rules-button" title="Game Rules">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g fill='#FFFFFF'>
+                <path
+                    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm2 16c0 1.1-.9 2-2 2s-2-.9-2-2v-6c0-1.1.9-2 2-2s2 .9 2 2v6zm-2-9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z">
+                </path>
+            </g>
+        </svg>
+    </span>
+    <div class="overlay hidden"></div>
+    <div class="rules-show hidden">
+        <span class="hide-rules">&times;</span>
+        <h3>Game Rules 📃</h3>
+        <p>
+            - Roll the dice many times to get high score... <br>
+            - If you get 100 points at least as a total score then you win! <br>
+            - But remember you need to hold the current score
+            before you get number one on the dice! <br>
+            - In case you hold the current score it will added to the total score
+            and it's the other player turn! <br>
+            - If you get one so you will lose the current score
+            and the other player will play. <br>
+        </p>
+    </div>
+    <section class="game">
+        <button class="reset-game">🔁 NEW GAME</button>
+        <button class="roll-dice">🎲 ROLL DICE</button>
+        <button class="hold">📥 HOLD</button>
+        <img src="" alt="Dice" class="dices hidden">
+        <div class="player one active">
+            <h2>PLAYER 1</h2>
+            <p class="total-score" id="total-score-0">0</p>
+            <div class="current">
+                <h4>Current</h4>
+                <span class="current-score" id="current-score-0">0</span>
+            </div>
+        </div>
+        <div class="player two">
+            <h2>PLAYER 2</h2>
+            <p class="total-score" id="total-score-1">0</p>
+            <div class=" current">
+                <h4>Current</h4>
+                <span class="current-score" id="current-score-1">0</span>
+            </div>
+        </div>
+    </section>
+    <script src=" script.js"></script>
+</body>
+
+</html>

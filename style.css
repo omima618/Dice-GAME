@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Nunito Sans", sans-serif;
+}
+.rules-button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 23px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.rules-button svg {
+    width: 100%;
+}
+.rules-button svg:hover {
+    opacity: 1;
+}
+.overlay {
+    position: absolute;
+    z-index: 20;
+    inset: 0;
+    background-color: black;
+    opacity: 0.7;
+}
+.rules-show {
+    position: absolute;
+    z-index: 30;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.rules-show span {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #9e0965;
+    cursor: pointer;
+}
+.rules-show h3 {
+    width: fit-content;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 20px 10px;
+    color: #9e0965;
+}
+.rules-show p {
+    padding: 0 20px;
+    line-height: 1.8;
+    font-size: 20px;
+    color: #505050;
+}
+.game {
+    width: 900px;
+    display: flex;
+    position: relative;
+    height: 75vh;
+}
+.game button {
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 7px 20px;
+    width: fit-content;
+    font-size: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.reset-game {
+    top: 40px;
+    left: calc(50% - 74.55px);
+}
+.roll-dice {
+    bottom: 125px;
+    left: calc(50% - 70.65px);
+}
+.hold {
+    bottom: 65px;
+    left: calc(50% - 53.2px);
+}
+.dices {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 30%;
+    left: calc(50% - 25px);
+    z-index: 5;
+}
+.hidden {
+    display: none;
+}
+.player {
+    width: 50%;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+    background-color: #ffffffa4;
+    opacity: 0.6;
+}
+.active {
+    opacity: 1;
+}
+.player h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.total-score {
+    color: #9e0965;
+    font-size: 55px;
+    font-weight: 600;
+}
+.current {
+    font-size: 20px;
+    background-color: #a30065ca;
+    color: white;
+    width: 170px;
+    padding: 10px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 75px;
+    left: calc((100% - 170px) / 2);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.current h4 {
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+.winner {
+    width: fit-content;
+    font-size: 35px;
+    margin: -10px auto 0;
+    color: white;
+}
